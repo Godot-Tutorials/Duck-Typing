@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Animal",
+"language": "GDScript",
+"path": "res://AnimalClass.gd"
+}, {
+"base": "Reference",
+"class": "Circle",
+"language": "GDScript",
+"path": "res://CircleClass.gd"
+}, {
+"base": "Animal",
+"class": "Duck",
+"language": "GDScript",
+"path": "res://DuckClass.gd"
+} ]
+_global_script_class_icons={
+"Animal": "",
+"Circle": "",
+"Duck": ""
+}
+
+[application]
+
+config/name="Duck Typing"
+run/main_scene="res://Node2D.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
